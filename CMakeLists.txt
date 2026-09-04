@@ -32,10 +32,9 @@ qt_add_qml_module(appKioskApp
         icons/speed.svg
         icons/tools.svg
         icons/pencil.svg
+        videos/fruit_video_1.mp4
+        videos/fruit_video_2.mp4
 )
-
-# copy the videos next to the excutable
-file(COPY "${CMAKE_CURRENT_SOURCE_DIR}/videos" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}")
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an
