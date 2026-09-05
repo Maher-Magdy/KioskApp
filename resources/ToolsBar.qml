@@ -16,8 +16,8 @@ Rectangle {
         anchors.fill: parent
 
         Text {
-            id: line1Text 
-            
+            id: line1Text
+
             Layout.alignment: Qt.AlignHCenter
             text: qsTr("Line 1")
             color: "green"
@@ -26,13 +26,13 @@ Rectangle {
         }
 
         Rectangle {
-            id: settingsBtn                    
+            id: settingsBtn
 
             Layout.preferredWidth: 45
-            Layout.preferredHeight: 45 
-            Layout.alignment: Qt.AlignCenter               
+            Layout.preferredHeight: 45
+            Layout.alignment: Qt.AlignCenter
             color: mouseArea.containsMouse ? "#1E1E1E" : "transparent"
-            radius: 4 
+            radius: 4
 
             Image {
                 id: gearImage
@@ -49,10 +49,10 @@ Rectangle {
                 hoverEnabled: true
 
                 onClicked: settingsPopup.open()
-            }   
+            }
 
             ToolTip {
-                id: settingsToolTip 
+                id: settingsToolTip
 
                 visible: mouseArea.containsMouse
                 text: qsTr("Settings")
@@ -60,7 +60,7 @@ Rectangle {
         }
 
         Text {
-            id: line2Text 
+            id: line2Text
 
             Layout.alignment: Qt.AlignHCenter
             text: qsTr("Line 2")

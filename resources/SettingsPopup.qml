@@ -26,7 +26,7 @@ Popup {
     }
 
     ColumnLayout {
-        id: mainColumnLayout 
+        id: mainColumnLayout
 
         anchors.fill: parent
         spacing: 0
@@ -47,9 +47,9 @@ Popup {
                 Layout.preferredHeight: 30
                 Layout.leftMargin: 50
                 color: "transparent"
-                
+
                 Image {
-                    id: iconImage 
+                    id: iconImage
 
                     anchors.fill: parent
                     fillMode: Image.PreserveAspectFit
@@ -81,7 +81,7 @@ Popup {
         }
 
         RowLayout {
-            id: mainSettingsRowLayout 
+            id: mainSettingsRowLayout
 
             Layout.fillWidth: true
             Layout.fillHeight: true
@@ -140,13 +140,13 @@ Popup {
                 icon.source: iconSource
                 icon.width: 35
                 icon.height: 35
-                
-                palette.button: "royalblue" 
+
+                palette.button: "royalblue"
 
                 checkable: true
 
                 ButtonGroup.group: btnGroup
-            } 
+            }
 
             // Vertical Separator
             Rectangle {
@@ -158,14 +158,14 @@ Popup {
             }
 
             RowLayout {
-                id: subSettingsRowLayout 
+                id: subSettingsRowLayout
 
                 Layout.alignment: Qt.AlignTop
                 Layout.margins: 12
                 spacing: 12
 
                 Label {
-                    id: settingLabel 
+                    id: settingLabel
 
                     text: {
                         switch (btnGroup.checkedButton) {
@@ -179,7 +179,7 @@ Popup {
                 }
 
                 Slider {
-                    id: slider 
+                    id: slider
 
                     Layout.preferredWidth: 400
                     visible: btnGroup.checkedButton === speedBtn
@@ -199,14 +199,14 @@ Popup {
                 }
 
                 ComboBox {
-                    id: comboBox 
+                    id: comboBox
 
                     visible: btnGroup.checkedButton === toolsBtn
 
                     model: ["Kg", "Ib", "Oz"]
                     popup.modal: true
                     popup.closePolicy: Popup.CloseOnPressOutside
-                }                  
+                }
 
                 Button {
                     id: colorDialogOpener

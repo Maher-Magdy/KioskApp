@@ -18,7 +18,7 @@ qt_add_executable(appKioskApp
 )
 
 qt_add_qml_module(appKioskApp
-    URI KioskApp     
+    URI KioskApp
     QML_FILES
         resources/Main.qml
         resources/MotorControls.qml
