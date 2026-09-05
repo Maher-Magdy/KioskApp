@@ -39,7 +39,7 @@ Rectangle {
 
                 anchors.fill: parent
                 fillMode: Image.PreserveAspectFit
-                source: "qrc:/icons/gear.svg"
+                source: "qrc:/qt/qml/KioskApp/icons/gear.svg"
             }
 
             MouseArea {

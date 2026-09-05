@@ -53,7 +53,7 @@ Popup {
 
                     anchors.fill: parent
                     fillMode: Image.PreserveAspectFit
-                    source: "qrc:/icons/gear.svg"
+                    source: "qrc:/qt/qml/KioskApp/icons/gear.svg"
                 }
             }
 
@@ -63,7 +63,7 @@ Popup {
                 Layout.alignment: Qt.AlignRight
                 Layout.preferredWidth: 50
                 Layout.preferredHeight: 50
-                icon.source: "qrc:/icons/close.svg"
+                icon.source: "qrc:/qt/qml/KioskApp/icons/close.svg"
                 icon.width: 50
                 icon.height: 50
 
@@ -105,7 +105,7 @@ Popup {
                     Layout.preferredHeight: 75
 
                     tabText: qsTr("Speed")
-                    iconSource: "qrc:/icons/speed.svg"
+                    iconSource: "qrc:/qt/qml/KioskApp/icons/speed.svg"
                     checked: true
                 }
 
@@ -116,7 +116,7 @@ Popup {
                     Layout.preferredHeight: 75
 
                     tabText: qsTr("Tools")
-                    iconSource: "qrc:/icons/tools.svg"
+                    iconSource: "qrc:/qt/qml/KioskApp/icons/tools.svg"
                 }
 
                 SettingsTab {
@@ -126,7 +126,7 @@ Popup {
                     Layout.preferredHeight: 75
 
                     tabText: qsTr("Colors")
-                    iconSource: "qrc:/icons/colors.svg"
+                    iconSource: "qrc:/qt/qml/KioskApp/icons/colors.svg"
                 }
             }
 
@@ -216,7 +216,7 @@ Popup {
                     Layout.preferredWidth: 40
                     Layout.preferredHeight: 40
 
-                    icon.source: "qrc:/icons/pencil.svg"
+                    icon.source: "qrc:/qt/qml/KioskApp/icons/pencil.svg"
                     onClicked: colorDialog.open()
                 }
 

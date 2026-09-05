@@ -56,7 +56,7 @@ ApplicationWindow {
                     Layout.fillWidth: true
                     Layout.fillHeight: true
 
-                    videoSource: "qrc:/videos/fruit_video_1.mp4"
+                    videoSource: "qrc:/qt/qml/KioskApp/videos/fruit_video_1.mp4"
                 }   
 
                 MotorControls {
@@ -80,7 +80,7 @@ ApplicationWindow {
                     Layout.fillWidth: true
                     Layout.fillHeight: true
 
-                    videoSource: "qrc:/videos/fruit_video_2.mp4"
+                    videoSource: "qrc:/qt/qml/KioskApp/videos/fruit_video_2.mp4"
                 } 
 
                 MotorControls {

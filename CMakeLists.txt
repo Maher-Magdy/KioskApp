@@ -18,8 +18,7 @@ qt_add_executable(appKioskApp
 )
 
 qt_add_qml_module(appKioskApp
-    URI KioskApp
-    NO_RESOURCE_TARGET_PATH 
+    URI KioskApp     
     QML_FILES
         resources/Main.qml
         resources/MotorControls.qml
@@ -52,3 +51,23 @@ target_link_libraries(appKioskApp
         Qt6::Quick
         Qt6::Multimedia
 )
+
+find_file(QT_WAYLAND_PLUGIN
+    NAMES libqwayland.so
+    PATHS "${QT6_INSTALL_PREFIX}/plugins/platforms"
+    NO_DEFAULT_PATH
+)
+
+include(GNUInstallDirs)
+
+install(TARGETS appKioskApp
+    RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
+)
+
+qt_generate_deploy_qml_app_script(
+    TARGET appKioskApp
+    OUTPUT_SCRIPT deploy_script
+    NO_UNSUPPORTED_PLATFORM_ERROR
+    INCLUDE_PLUGINS qwayland
+)
+install(SCRIPT ${deploy_script})
